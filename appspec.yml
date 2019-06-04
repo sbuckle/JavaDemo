@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: website-project.war 
+  - source: target/website-project.war 
     destination: /var/lib/tomcat9/webapps/
 hooks:
   ApplicationStop:
