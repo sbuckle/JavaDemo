@@ -40,6 +40,6 @@ public class HelloWorldServletTest {
 		HelloWorldServlet servlet = new HelloWorldServlet();
 		servlet.doGet(request, response);
 		String result = sw.getBuffer().toString().trim();
-		assertEquals(result, new String("Hello World!"));
+		assertEquals(result, new String("Hello Bob!"));
 	}
 }
