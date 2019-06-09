@@ -9,6 +9,6 @@ COPY . $APP_HOME
 
 RUN ["mvn", "package"]
 
-FROM jetty:9.3.0-jre8
+FROM jetty:9.4.18-jre8-alpine
 
 COPY --from=builder /root/website-project/target/*.war $JETTY_BASE/webapps/
